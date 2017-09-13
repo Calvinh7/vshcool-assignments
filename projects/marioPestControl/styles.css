@@ -1,0 +1,31 @@
+* {
+    background-image: url(https://orig15.deviantart.net/a39b/f/2014/077/5/b/mario_background_by_mariokid99-d7arnlb.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+
+.cheeps {
+    position: fixed;
+    top: 38%;
+    height: 150px;
+    width: 110px;
+}
+
+.goomba {
+    position: fixed;
+    height: 150px;
+    width: 110px;
+    top: 12%;
+}
+
+.bomb {
+    position: fixed;
+    height: 150px;
+    top: 64%;
+    width: 110px;
+}

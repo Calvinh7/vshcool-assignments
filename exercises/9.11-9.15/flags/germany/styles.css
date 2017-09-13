@@ -1,0 +1,23 @@
+.black{
+    height: 200px;
+    width: 750px;
+    background-color: black;
+    position: fixed;
+    transform: translate(10%);
+}
+
+.red{
+    height: 200px;
+    width: 750px;
+    background-color: red;
+    position: fixed;
+    transform: translate(10%, 100%);
+}
+
+.yellow{
+    height: 200px;
+    width: 750px;
+    background-color: yellow;
+    position: fixed;
+    transform: translate(10%, 200%);
+}

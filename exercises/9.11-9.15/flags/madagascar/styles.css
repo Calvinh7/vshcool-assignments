@@ -1,0 +1,24 @@
+.white{
+    height: 400px;
+    width: 100px;
+    background-color: white;
+    position: fixed;
+    transform: translate( 100%);
+}
+
+.darkOrange{
+    height: 200px;
+    width: 400px;
+    background-color: #ee3833;
+    position: fixed;
+    transform: translate(50%, 100%);
+}
+
+.green{
+    height: 200px;
+    width: 400px;
+    background-color: #006pwd
+    a00;
+    position: fixed;
+    transform: translate(50%, 200%);
+}

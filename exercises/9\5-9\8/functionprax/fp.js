@@ -1,6 +1,5 @@
-function (a,b) {
+function numbers (a,b) {
     return (a + b)
-    console.log (a + b)
 }
 
-function (1,2)
+console.log(numbers(1, 2))
