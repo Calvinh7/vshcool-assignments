@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
     <link href="styles.css" rel="stylesheet"/>
     <title>Mario Pest Control</title>
@@ -7,29 +7,30 @@
 <body>
     <h1>Mario's Pest Control</h1>
 
+    <img class="goomba" src="https://www.mariowiki.com/images/thumb/4/4d/Goombansmbw.png/180px-Goombansmbw.png">
+    <h3>Goomba Price: <span id="goomba-price">5</span>
+    <h3>Goomba Count: </h3>
+    <input id="goomba-count" type="number" />
+    <h3> Total Owed: <span id="goomba-total">TBD</span></h3>
 
-    <img class="cheeps" src="http://gogorobotendo.com/wp-content/uploads/photo-gallery/inktober/4%20cheepcheep.jpg">
+    <img class="bomb" src="https://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_%28MKWii%29.png/revision/latest?cb=20120819225302&path-prefix=en">
+    <h3>Bob-bomb price: <span id="bomb-price">7</span>
+    <h3>Bob-bomb Count: </h3>
+    <input id="bomb-count" type="number" />
+    <h3> Total Owed: <span id="bomb-total">TBD</span></h3>
 
-    <h3>Cheep-cheep price: <span id="cheep-price">5</span></h3>
-    <h3>Cheep-cheep count: </h3>
-    <input id="Cheep-cheep count" type="number" />
-    <button id="calculate">Calculate</button>
+    <img class="cheep" src="https://www.mariowiki.com/images/thumb/6/63/CheepCheepNSMBU.png/200px-CheepCheepNSMBU.png">
+    <h3>Cheep-cheep price: <span id="cheep-price">11</span>
+    <h3>Cheep-cheep Count: </h3>
+    <input id="cheep-count" type="number" />
+    <h3> Total Owed: <span id="cheep-total">TBD</span></h3>
 
-    <img class="bomb" src="https://t05.deviantart.net/ijw149mfzj_zxBfjZE8Qp6T1qk8=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre12/99e6/th/pre/f/2010/200/b/0/bob_omb_by_scubadiving5174.jpg">
-    <h3>Bomb-omb price: <span id="bomb-price">5</span></h3>
-    <h3>Bomb-omb count: </h3>
-    <input id="bomb count" type="number" />
-    <button id="calculate">Calculate</button>
+    <h2>Grand total: <span id="grand-total"></span><h2>
+        <div>
+            <button class="btn btn-danger" class="resultButton" id="button">Total Owed</button>
+            <span class="result" id="grand-total"></span><span></span>
+        </div>
 
-    <img class="goomba" src="https://cdn.drawception.com/images/panels/2016/6-1/z446MkXk15-1.png">
-    <h3>Goomba price: <span id="goomba-price">5</span></h3>
-    <h3>Goomba count: </h3>
-    <input id="goomba count" type="number" />
-    <button id="calculate">Calculate</button>
-
-
-
-
-
+    <script src="mpc.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.parent {
+    background-color: red;
+    width: 1000px;
+    height: 200px;
+}
+
+.box {
+    height: 50vh;
+    width: 50vw;
+    background-color: wheat;
+}
+
+@media (min-width: 800px) {
+    .box {
+    background-color: rebeccapurple;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box {
+        background-color: lawngreen;
+    }
+}

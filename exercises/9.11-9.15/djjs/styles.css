@@ -1,0 +1,49 @@
+.square{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+
+}
+
+.square:hover {
+    background-color: blue;
+}
+
+.square:focus {
+    background-color: yellow;
+}
+
+.square:active {
+    background-color: red;
+}
+
+:focus {
+    outline: 0;
+}
+
+/*.square {
+    font-size: 5em;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    position: relative;
+    top: 150px;
+    left: 470px;
+    border: 1px solid #555555;
+}
+
+.square:hover {
+    background-color: #55bfed;
+    border: 1px solid #555555;
+}
+.square:focus {
+    background-color: #ffff77;
+    border: 1px solid #555555;
+}
+.square:active {
+    background-color: #ff2266;
+    border: 1px solid #555555;
+}
+:focus {
+    outline: 0;
+}*/
