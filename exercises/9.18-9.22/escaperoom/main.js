@@ -8,7 +8,7 @@ index = readline.keyInSelect(choices, "What do you do?")
 
 var doorLocked = 1
 
-while (doorLocked = 1) {
+while (doorLocked === 1) {
     if (index === 0) {
         console.log("\n...You die\n");
         return;
@@ -24,7 +24,7 @@ while (doorLocked = 1) {
 var choicePt2 = ["Put your hand in the hole", "Try the door"];
 
 if (index === 0) {
-        console.log("\n...You die\n");
-    } else if (index === 1) {
-        console.log("\nThe door swings open, and you walk free\n");
+    console.log("\n...You die\n");
+} else if (index === 1) {
+    console.log("\nThe door swings open, and you walk free\n");
 }
