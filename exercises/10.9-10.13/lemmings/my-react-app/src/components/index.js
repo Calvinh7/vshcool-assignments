@@ -1,11 +1,5 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../App';
 
-class Lives extends component {
-    render() {
-        return (
-            <h1>Hello</h1>
-        )
-        )
-    }
-}
+ReactDOM.render(<App/>, document.getElementById('root'));

@@ -1,28 +1,44 @@
 import React from "react";
+import NameForm from "./components/NameForm"
+import NmaeList from "./components/NameList"
 
 class App extends React.component {
     constructor() {
         super();
         this.state = {
-            mariosLives: 0
+            name: ""
+            namelist: []
         }
-        this.gainALife = this.gainALife.bind(this);
-        this.loseALife = this.loseALife.bind.(this);
+        this.handleChange = this.handleChange.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
+}
 
-    gainALife() {
-        this.setState(prevState => {
-            return {
-                mariosLives: prevState.mariosLives + 1
-            }
-        });
-    }
 
-    loseALife() {
-        this.setState(prevState => {
-            return {
-                mariosLives: prevState.mariosLives - 1
-            }
-        });
+handleChange(event) {
+    this.setState({
+        name: event.target.value
+    });
+}
+
+handleClick() {
+    this.setState(prevState => {
+        return {
+            namelist: [...prevState.namelist, prevState.name],
+            name: ""
+        }
+    });
+}
+
+        render() {
+            return (
+                <div>
+                    <NameForm
+                        handleChange={this.handleChange}
+                        name={this.state.name}/>
+
+                    <NameList names={this.state.namelsit}/>
+                </div>
+            )
     }
 }
