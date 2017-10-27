@@ -1,1 +1,0 @@
-This repository is intended for V-School students learning React. 
