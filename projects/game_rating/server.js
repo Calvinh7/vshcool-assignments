@@ -2,16 +2,18 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const port = process.env.PORT || 1313
-const memoryRoutes = require("./routes/memory")
+const cors = require("cors")
+const port = process.env.PORT || 1337;
+const gameRoutes = require("./routes/games")
 
-mongoose.connect("mongodb://localhost/disregarded-SW-memories", (err) => {
+mongoose.connect("mongodb://localhost/games", (err) => {
     console.log("connected to the database");
 });
 
 app.use(bodyParser.json());
-app.use("/memory", require("./routes/memory"));
+app.use(cors)
+app.use("/games", require("./routes/games"));
 
 app.listen(port, () => {
     console.log(`App is listening on ${port}`);
-})
+});
